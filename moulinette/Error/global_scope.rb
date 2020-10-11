@@ -13,10 +13,10 @@ class Global_scope
             if (lines[i] == "}")
                 if (lines[i + 1] == nil)
                     if (lines[i + 2] == nil)
-                        puts "G2 error in #{i}: you must have only one empty line between function";
+                        puts "G2 error in #{i + 1}: you must have only one empty line between function";
                     end
                 else
-                    puts "G2 error in #{i}: you must have only one empty line between function"
+                    puts "G2 error in #{i + 1}: you must have only one empty line between function"
                 end
             end
             i += 1;

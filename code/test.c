@@ -17,15 +17,142 @@ char *my_evil_str(char *str)
         str[l - 1 - i] = str[i];
         str[i] = c;
     }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
     return (str);
 }
 
-char test()
+char *my_evil_str(char *str)
 {
+    int l = my_strlen(str);
+    char c;
 
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    return (str);
 }
-
-char test()
+char *my_evil_str(char *str)
 {
+    int l = my_strlen(str);
+    char c;
 
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    return (str);
+}
+char *my_evil_str(char *str)
+{
+    int l = my_strlen(str);
+    char c;
+
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    for (int i = 0 ; i <= l / 2 ; i++) {
+        c = str[l - 1 - i];
+        str[l - 1 - i] = str[i];
+        str[i] = c;
+    }
+    return (str);
 }
