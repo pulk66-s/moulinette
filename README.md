@@ -2,10 +2,15 @@ Moulinette de la promo.</br>
 </br>
 </br>
 </br>
-Fonctionnement :
+Fonctionnement : </br>
+Si vous n'avez pas ruby installez le grâce a : sudo apt-get install ruby</br>
+</br>
 Le dossier code est la ou vous mettrez tout les fichiers a tester, il vous suffira ensuite simplement de lancer le mouli_lauch.sh 
 </br>
 </br>
+</br>
+Work in Progress:</br>
+Implementation des corrections d'espaces autour des signes mathématiques</br>
 </br>
 Partie déja implémenté :</br>
 </br>
