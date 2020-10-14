@@ -2,6 +2,7 @@ class Space_Error
     def initialize(lines)
         space_error(lines);
     end
+
     def space_error(lines)
         i = 0;
         while (i < lines.size)
@@ -11,6 +12,7 @@ class Space_Error
             i += 1;
         end
     end
+
     def check_space(str)
         if (str == nil)
             return (-1);

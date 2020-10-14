@@ -2,6 +2,54 @@ class Function_error
     def initialize(lines)
         verif_nb_lines(lines);
         verif_column(lines);
+        verif_name(lines);
+    end
+
+    def contain_only_space(str)
+        len = str.length;
+        i = 0;
+        while (i < len)
+            if (str[i] != ' ')
+                return (0);
+            end
+        end
+        return (1);
+    end
+
+    def snake_case(str)
+        len = str.length;
+        i = 0;
+        while (i < len)
+            if (!(str[i] =~ /[a-z0-1_]/))
+                return (0);
+            end
+            i += 1;
+        end
+        return (1);
+    end
+
+    def verif_name(lines)
+        len = lines.length;
+        i = 0;
+        types = ["int", "char", "static", "unsigned", "float", "double"];
+        while (i < len)
+            if (lines[i] != nil)
+                for t in types
+                    if (lines[i].start_with?(t))
+                        str = lines[i].split(" ");
+                        part = str[-2];
+                        word = part.split("(");
+                        if (word[0][0] == '*')
+                            word[0][0] = '';
+                        end
+                        if (snake_case(word[0]) == 0)
+                            puts "F2 error in #{i + 1}: you must name your function with lowercase";
+                        end
+                    end
+                end
+            end
+            i += 1;
+        end
     end
 
     def verif_column(lines)
