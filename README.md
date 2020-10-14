@@ -19,6 +19,9 @@ F3 : nb of column in one line.</br>
 F4 : nb of lines in a function.</br>
 L2 : you mustn't have tab in your file and using 4n spaces.</br>
 L3 : You must have a space between function declaration.</br>
+     You must have a space before '(' when the last word is a key word ("for", "while", "if", etc)</br>
+     You mustn't have a space before and after "(" and ")" when calling a function</br>
+     You must have a space before and after ','</br>
 
 Implicit :</br>
 Mustn't have a space at the end of a line</br>

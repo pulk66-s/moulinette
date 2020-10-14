@@ -25,27 +25,21 @@ class Global_scope
 
     def verif_header(lines)
         if (lines[0] != "/*")
-            puts "A"
             return (0);
         end
         if (lines[1] != "** EPITECH PROJECT, 2020")
-            puts "Z"
             return (0);
         end
         if (lines[2].start_with?("** ") == false)
-            puts "E"
             return (0);
         end
         if (lines[3] != "** File description:")
-            puts "R"
             return (0);
         end
         if (lines[4].start_with?("** ") == false)
-            puts "T"
             return (0);
         end
         if (lines[5] != "*/")
-            puts "Y"
             return (0);
         end
         return (1);
