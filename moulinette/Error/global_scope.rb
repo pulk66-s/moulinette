@@ -2,8 +2,23 @@ class Global_scope
     def initialize(lines)
         if (verif_header(lines) == 0)
             puts "G1 error : not good header"
+        verif_comment(lines);
         end
         verif_separate_function(lines);
+    end
+
+    def verif_comment(lines)
+        for i in 0..lines.size
+            if (lines[i] != nil)
+                if (lines[i][0] != "/" && lines[i][1] != "*")
+                    for j in 0..lines[i].size
+                        if (lines[i][j] == "/" && lines[i][j + 1] == "*" || lines[i][j] == "/" && lines[i][j + 1] == "/")
+                            puts "F6 Error in lines #{i + 1}: You mustn't have a comment in your function"
+                        end
+                    end
+                end
+            end
+        end
     end
 
     def verif_separate_function(lines)
