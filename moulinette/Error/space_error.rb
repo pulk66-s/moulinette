@@ -6,7 +6,7 @@ class Space_Error
 
     def word_before(str, c)
         words = str.split(" ");
-        key_words = ["if", "while", "for", "malloc", "=", "*"];
+        key_words = ["if", "while", "for", "malloc", "=", "*", "switch", "return"];
         for i in 0..words.size
             if (words[i] != nil)
                 if (words[i].include?("("))
@@ -38,7 +38,7 @@ class Space_Error
                         if (lines[i][j - 1] == " ")
                             puts "L3 Error in line #{i + 1}: you mustn't have a space before a ','";
                         end
-                        if (lines[i][j + 1] != " ")
+                        if (lines[i][j + 1] != " " && lines[i][j + 1] != nil)
                             puts "L3 Error in line #{i + 1}: you must have a space after a ','";
                         end
                     end
@@ -49,10 +49,12 @@ class Space_Error
                             end
                         else
                             if (lines[i][j - 1] != " ")
-                                puts "L3 Error in line #{i + 1}: you must have a space before '('";
+                                puts "[WARNIG] : This Error is perhaps fake, check if it's not"
+                                puts "L3 Error in line #{i + 1}: When you have a key_words you must have a space before next '('"
                             end
                             if (lines[i][j + 1] == " ")
-                                puts "L3 Error in line #{i + 1}: you mustn't have a space after '('";
+                                puts "[WARNIG] : This Error is perhaps fake, check if it's not"
+                                puts "L3 Error in line #{i + 1}: When you have a key_words you mustn't have a space after next '('"
                             end
                         end
                     end

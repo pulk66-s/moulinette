@@ -10,11 +10,17 @@ echo ""
 
 for fich in $(find -type f);
 do
-    if [ ${fich: -2} != ".c" ]
+    if [ $fich != "Makefile" ]
     then
-        if [ ${fich: -2} != ".h" ]
+        if [ ${fich: -2} != ".c" ]
         then
-            echo $fich "have a bad extension"
+            if [ ${fich: -2} != ".h" ]
+            then
+                if [[ $fich != *"/."* ]]
+                then
+                    echo $fich "have a bad extension"
+                fi
+            fi
         fi
     fi
 done
