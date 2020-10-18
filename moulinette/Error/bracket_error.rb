@@ -11,9 +11,11 @@ class Bracket
                     if (lines[i][0] != "{")
                         words = lines[i].split(" ");
                         error = 1;
-                        for j in 0..words.size
-                            if (key_words.include?(words[j]))
-                                error = 0;
+                        for j in 0..words.size - 1
+                            for k in 0..key_words.size - 1
+                                if (words[j].include?(key_words[k]))
+                                    error = 0;
+                                end
                             end
                         end
                         if (error == 1)
