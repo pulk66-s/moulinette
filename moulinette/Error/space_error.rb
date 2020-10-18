@@ -6,7 +6,7 @@ class Space_Error
 
     def word_before(str, c)
         words = str.split(" ");
-        key_words = ["if", "while", "for", "malloc", "=", "*", "switch", "return"];
+        key_words = ["if", "while", "for", "malloc" , "switch", "return"];
         for i in 0..words.size
             if (words[i] != nil)
                 if (words[i].include?("("))

@@ -10,7 +10,7 @@ echo ""
 
 for fich in $(find -type f);
 do
-    if [ $fich != "Makefile" ]
+    if [ ${fich: -8} != "Makefile" ]
     then
         if [ ${fich: -2} != ".c" ]
         then

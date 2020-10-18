@@ -2,6 +2,7 @@ require_relative "space_error.rb"
 require_relative "global_scope.rb"
 require_relative "function_error.rb"
 require_relative "indentation.rb"
+require_relative "bracket_error.rb"
 
 class Error
     def initialize(fichier)
@@ -10,6 +11,7 @@ class Error
         Global_scope.new(lines);
         Function_error.new(lines);
         Indentation.new(lines);
+        Bracket.new(lines);
     end
 
     def get_lines(file)
