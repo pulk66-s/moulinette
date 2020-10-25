@@ -16,6 +16,7 @@ Work in Progress:</br>
 </br>
 Partie déja implémenté :</br>
 </br>
+C1 : you mustn't have more than 3 branching condition </br>
 O2 : your files must be ".c" ".h" or "Makefile"</br>
 F2 : name of function must be in lowercase</br>
 F3 : nb of column in one line.</br>
